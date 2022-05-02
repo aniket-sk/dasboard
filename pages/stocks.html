@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Plutus </title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/forecasts.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <img src="../images/plutus.png" alt="Plutus">
+            <span class="logo_name">Plutus</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="dashboard.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="stocks.html" class="active">
+                    <i class='bx bx-table'></i>
+                    <span class="links_name">Stock Table</span>
+                </a>
+            </li>
+            <li>
+                <a href="tutorials.html">
+                    <i class='bx bxs-graduation'></i>
+                    <span class="links_name">Tutorials</span>
+                </a>
+            </li>
+            <li>
+                <a href="forecasts.html">
+                    <i class='bx bx-info-circle'></i>
+                    <span class="links_name"> About Forecasting</span>
+                </a>
+            </li>
+            <!-- <li>
+                <a href="profile.html">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Profile</span>
+                </a>
+            </li> -->
+            <li class="log_out">
+                <a href="../signin.html">
+                    <i class='bx bx-log-out'></i>
+                    <span class="links_name">Log out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class='bx bx-menu sidebarBtn'></i>
+                <span class="active">Stock Table</span>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <i class='bx bx-search'></i>
+            </div>
+            <div class="profile-details">
+                <img src="../images/profile.png" alt="Profile Image">
+                <span class="admin_name">Chakravarthi</span>
+                <!-- <i class='bx bx-chevron-down'></i> -->
+            </div>
+        </nav>
+
+        <div class="home-content">
+            <div class="box table-responsive">
+                <iframe src="https://plutusforecastings.herokuapp.com/" height="570" width="100%"
+                    style="border:none;"></iframe>
+                <!-- <table class="table table-bordered table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Symbol</th>
+                            <th scope="col">Volume</th>
+                            <th scope="col">Open</th>
+                            <th scope="col">Close</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="symbol">NFLX</th>
+                            <td class="volume">11.27M</td>
+                            <td class="opening">$210.05</td>
+                            <td class="closing">$226.27</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="symbol">TSLA</th>
+                            <td class="volume">24.40M</td>
+                            <td class="opening">$994.00</td>
+                            <td class="closing">$1,034.85</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="symbol">NVDA</th>
+                            <td class="volume">53.90M</td>
+                            <td class="opening">$195.00</td>
+                            <td class="closing">$204.86</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="symbol">AAPL</th>
+                            <td class="volume">86.65M</td>
+                            <td class="opening">$161.50</td>
+                            <td class="closing">$167.87</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="symbol">MSFT</th>
+                            <td class="volume">28.89M</td>
+                            <td class="opening">$273.38</td>
+                            <td class="closing">$283.20</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="symbol">AMZN</th>
+                            <td class="volume">3.23M</td>
+                            <td class="opening">$2,873.95</td>
+                            <td class="closing">$2,992.30</td>
+                        </tr>
+                    </tbody>
+                </table> -->
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>

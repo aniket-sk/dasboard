@@ -1,0 +1,62 @@
+.home-content .box {
+  width: 100%;
+  background: #fff;
+  padding: 20px 30px;
+  margin: 0 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box .title {
+  font-size: 24px;
+  font-weight: 500;
+  /* margin-bottom: 10px; */
+}
+
+.home-content .box ul {
+  padding-left: 30px;
+}
+
+.box button {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow, transform;
+  background: radial-gradient(100% 100% at 100% 0%, #5468ff 0%, #0a2558 100%);
+  padding: 0 32px;
+  border-radius: 6px;
+  color: #fff;
+  height: 48px;
+  font-size: 18px;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.box button:hover {
+  box-shadow: 0px 4px 8px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #0a2558;
+  transform: translateY(-2px);
+}
+.box button:active {
+  box-shadow: inset 0px 3px 7px #0a2558;
+  transform: translateY(2px);
+}
+
+/* Responsive Media Query */
+@media (max-width: 1150px) {
+  .home-content {
+    flex-direction: column;
+  }
+
+  .home-content .box {
+    width: 100%;
+    overflow-x: scroll;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-content .sales-details {
+    width: 560px;
+  }
+}
