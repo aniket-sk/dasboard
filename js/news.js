@@ -2,8 +2,8 @@ console.log("This is my index js file");
 
 // Initialize the news api parameters
 let category = "business";
-let domains = "finance.yahoo.com";
-let sortby = "relevancy";
+let domains = "yahoo.com";
+let sortby = "popularity";
 let language = "en";
 let pagesize = "5";
 let apiKey = "c729e26ec97e4b6b905df8a6c90f38da";
@@ -15,7 +15,7 @@ let newsAccordion = document.getElementById("newsAccordion");
 const xhr = new XMLHttpRequest();
 xhr.open(
   "GET",
-  `https://newsapi.org/v2/top-headlines?q=stock&category=${category}&domains=${domains}&sortby=${sortby}&language=${language}&pagesize=${pagesize}&apiKey=${apiKey}`,
+  `https://newsapi.org/v2/everything?q=stock&domains=${domains}&sortby=${sortby}&language=${language}&pagesize=${pagesize}&apiKey=${apiKey}`,
   true
 );
 
@@ -32,7 +32,7 @@ xhr.onload = function () {
                             <div class="card-header" id="heading${index}">
                                 <h2 class="mb-0">
                                 <button class="btn btn-light collapsed" type="button" data-toggle="collapse" data-target="#collapse${index}"
-                                    aria-expanded="false" aria-controls="collapse${index}">
+                                    aria-expanded="false" aria-controls="collapse${index}" style="white-space: normal; text-align: left;">
                                    • ${element["title"]}
                                 </button>
                                 </h2>

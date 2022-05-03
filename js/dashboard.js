@@ -6,7 +6,3 @@ sidebarBtn.onclick = function () {
     sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
   } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
 };
-
-document.getElementById("myButton").onclick = function () {
-  location.href = "stocks.html";
-};
